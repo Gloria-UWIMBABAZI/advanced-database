@@ -10,4 +10,6 @@ app = Flask(__name__)
 @app.route("/", methods=["GET"])
 def get_index():
     return "Hello from the flask server."
+if __name__ == "__main__":
+    app.run(debug=True)   # <— starts the dev server
 
